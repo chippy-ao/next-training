@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+
+@layer base {
+  body {
+    @apply text-black font-body text-body;
+  }
+  h1 {
+    @apply text-heading1;
+  }
+  h2 {
+    @apply text-heading2;
+  }
+  h3 {
+    @apply text-heading3;
+  }
+}
+
+/* リセット */
+body, h1, h2, h3, p, figure, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
